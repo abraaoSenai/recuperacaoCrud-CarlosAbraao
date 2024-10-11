@@ -30,6 +30,7 @@ const index = () => {
           <Nav className="me-auto">
             <Nav.Link href="/CadastroProdutos">Cadastro de Produtos</Nav.Link>
             
+            <Nav.Link href="/ListaProdutos">Lista de produtos</Nav.Link>
 
 
 
