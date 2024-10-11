@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+// Css
 import './App.css';
+
+// Páginas
+import Home from "./pages/Home/index.jsx"
+import Login from "./pages/Login/index.jsx"
+import CadastroProdutos from "./pages/CadastroProdutos/index.jsx"
+
+// Componentes
+import MainNavBar from './components/MainNavBar/index.jsx'
+
+
+// BROWSERrOUTER
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
+// IMPORTS BOOTSTRAP {
+// NAVBAR BOOTSTRAP IMPORTS
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+
+
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>  
+      <BrowserRouter>
+        <MainNavBar/>
+       
+        
+
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/CadastroProdutos" element={<CadastroProdutos/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

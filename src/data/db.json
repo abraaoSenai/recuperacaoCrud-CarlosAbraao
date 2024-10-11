@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "nomeProduto": "teste",
+      "categoriaProduto": "teste",
+      "precoProduto": "teste",
+      "id": "8886"
+    },
+    {
+      "id": "8cfc",
+      "nomeProduto": "dadwad",
+      "categoriaProduto": "dad",
+      "precoProduto": "12321"
+    }
+  ]
+}
