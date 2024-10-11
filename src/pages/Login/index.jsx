@@ -28,6 +28,7 @@ import { Container } from 'react-bootstrap';
 
 const Login = () => {
   const [nomeUsuario, setNomeUsuario] = useState("")
+  const [senhaUsuario, setSenhaUsuario] = useState("")
   const [alertaClass, setAlertaClass] = useState("mb-3 d-none")
   const [alertaMensagem, setAlertaMensagem] = useState("")
 
@@ -76,6 +77,38 @@ const Login = () => {
 
               />
           </FloatingLabel>
+
+{/* Nome do produto */}
+          <FloatingLabel
+            controlId="senhaInput"
+            label="Senha"
+            className="mb-3"
+            
+          >
+            <Form.Control
+             type="text" 
+             placeholder="name@example.com" 
+             value={senhaUsuario}
+              onChange={(e)=>{
+                  setSenhaUsuario(e.target.value)
+
+
+                  console.log(senhaUsuario)
+              }} 
+
+              />
+          </FloatingLabel>
+
+{/* BOTÂO ENVIAR */}
+
+          <Button 
+          variant="primary"
+          type="submit"
+          
+          >Entrar</Button>
+          
+
+
 
         </form>
         </Container>
