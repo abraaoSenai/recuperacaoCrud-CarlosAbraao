@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 // CSS
 import styles from './index.module.css'
 
@@ -7,11 +9,12 @@ import styles from './index.module.css'
 import  { useState } from 'react';
 
 // NAVIGATE
-import {useNavigate} from "react-router-dom"
 
 // ALERT
 import Alert from 'react-bootstrap/Alert';
 
+// NAVBAR
+import MainNavBar from '../../components/MainNavBar/index'
 
 
 // COMPONENTES
@@ -45,13 +48,11 @@ const CadastroProdutos = () => {
   //  FUNÇÂO SUBMIT
   const handleSubmit = async (e) =>{
     e.preventDefault()
+    
+    if(!nomeProduto === "" ){
 
-    console.log("tomanocu")
-
-    if(!nomeProduto == "" ){
-
-      if(!categoriaProduto == ""){
-        if(!precoProduto == ""){
+      if(!categoriaProduto === ""){
+        if(!precoProduto === ""){
           
 
           const produto = {nomeProduto, categoriaProduto, precoProduto}
@@ -92,8 +93,13 @@ const CadastroProdutos = () => {
 
   
   return (
+      <>
+      <MainNavBar/>
+    
       <Container
       className={styles.mainContainer}>
+        
+
 
         <Alert
         key="danger"
@@ -103,6 +109,8 @@ const CadastroProdutos = () => {
         >
           {alertaMensagem}
         </Alert>
+
+        <h1>Cadastro de Produtos</h1>
 
         <form 
         
@@ -176,6 +184,7 @@ const CadastroProdutos = () => {
           <Button 
           variant="primary"
           type="submit"
+          className={styles.cadastrarBtn}
           
           >Cadastrar</Button>
           
@@ -187,7 +196,7 @@ const CadastroProdutos = () => {
 
 
         
-    
+      </>
     
     
     

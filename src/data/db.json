@@ -11,6 +11,27 @@
       "nomeProduto": "dadwad",
       "categoriaProduto": "dad",
       "precoProduto": "12321"
+    },
+    {
+      "id": "2c5b",
+      "nomeProduto": "testezinho",
+      "categoriaProduto": "teste",
+      "precoProduto": "4444"
+    },
+    {
+      "id": "f2e2",
+      "nomeProduto": "1610",
+      "categoriaProduto": "1610",
+      "precoProduto": "1610"
+    }
+  ],
+  "usuarios": [
+    {
+    "id": "1",
+    "nome": "adm",
+    "email": "adm@gmail.com",
+    "senha": "12345",
+    "tipo": "Administrador"
     }
   ]
 }
