@@ -49,10 +49,10 @@ const CadastroProdutos = () => {
   const handleSubmit = async (e) =>{
     e.preventDefault()
     
-    if(!nomeProduto === "" ){
+    if(!nomeProduto == "" ){
 
-      if(!categoriaProduto === ""){
-        if(!precoProduto === ""){
+      if(!categoriaProduto == ""){
+        if(!precoProduto == ""){
           
 
           const produto = {nomeProduto, categoriaProduto, precoProduto}
@@ -81,8 +81,6 @@ const CadastroProdutos = () => {
   }
   else{
 
-
-    
       setAlertaClass("mb-3")
       setAlertaMensagem("O nome do produto não pode ser vazio!")
   }

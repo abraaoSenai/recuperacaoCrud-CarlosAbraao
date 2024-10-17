@@ -1,37 +1,31 @@
 {
   "produtos": [
     {
-      "nomeProduto": "teste",
-      "categoriaProduto": "teste",
-      "precoProduto": "teste",
-      "id": "8886"
-    },
-    {
-      "id": "8cfc",
-      "nomeProduto": "dadwad",
-      "categoriaProduto": "dad",
-      "precoProduto": "12321"
-    },
-    {
-      "id": "2c5b",
-      "nomeProduto": "testezinho",
-      "categoriaProduto": "teste",
-      "precoProduto": "4444"
-    },
-    {
       "id": "f2e2",
       "nomeProduto": "1610",
       "categoriaProduto": "1610",
       "precoProduto": "1610"
+    },
+    {
+      "id": "40db",
+      "nomeProduto": "Banana",
+      "categoriaProduto": "452",
+      "precoProduto": "2"
+    },
+    {
+      "id": "ebf4",
+      "nomeProduto": "Banana",
+      "categoriaProduto": "Orgânico",
+      "precoProduto": "2"
     }
   ],
   "usuarios": [
     {
-    "id": "1",
-    "nome": "adm",
-    "email": "adm@gmail.com",
-    "senha": "12345",
-    "tipo": "Administrador"
+      "id": "1",
+      "nome": "adm",
+      "email": "adm@gmail.com",
+      "senha": "12345",
+      "tipo": "Administrador"
     }
   ]
 }

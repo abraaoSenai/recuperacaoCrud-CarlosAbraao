@@ -10,10 +10,10 @@ import MainNavBar from "../../components/MainNavBar/index.jsx"
 import { useState, useEffect } from "react";
 
 
-const url = "http://localhost:3000/usuarios";
+const url = "http://localhost:3000/produtos";
 
 const ListaDeProdutos = () => {
-  const [usuarios, setUsuarios] = useState([]);
+  const [produtos, setProdutos] = useState([]);
 
 
   //Resgate de dados da API
@@ -21,14 +21,14 @@ const ListaDeProdutos = () => {
     async function fetchData() {
       try {
         const res = await fetch(url);
-        const users = await res.json();
-        setUsuarios(users);
+        const produtos = await res.json();
+        setProdutos(produtos);
       } catch (error) {
         console.log(error.message);
       }
     }
     fetchData();
-    console.log(usuarios);
+    console.log(produtos);
   }, []);
 
   return (
@@ -43,32 +43,32 @@ const ListaDeProdutos = () => {
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th>#</th>
+              <th>ID</th>
               <th>Nome </th>
-              <th>Email</th>
-              <th>Tipo</th>
+              <th>Categoria</th>
+              <th>Preço</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            {usuarios.map((user) => (
-              <tr key={user.id}>
-                <td>{user.id}</td>
-                <td>{user.nome}</td>
-                <td>{user.email}</td>
-                <td>{user.tipo}</td>
+            {produtos.map((produto) => (
+              <tr key={produto.id}>
+                <td>{produto.id}</td>
+                <td>{produto.nomeProduto}</td>
+                <td>{produto.categoriaProduto}</td>
+                <td>{produto.precoProduto} R$ </td>
                 <td>
                   <ButtonGroup size="sm">
                     <Button variant="info">Editar</Button>
                     <Button
                       variant="danger"
                       onClick={async () => {
-                        const res = await fetch(`http://localhost:3000/usuarios/${user.id}`, {
+                        const res = await fetch(`http://localhost:3000/produtos/${produto.id}`, {
                           method: "DELETE",
                           headers: { "Content-Type": "application/json" },
                         });
-                        const funcionarioRemovido = await res.json()
-                        alert(`Usuário ${funcionarioRemovido.nome} foi excluido`)
+                        const produtoRemovido = await res.json()
+                        alert(`O produto ${produtoRemovido.nomeProduto} foi excluido`)
                       }}
                     >
                       Excluir
