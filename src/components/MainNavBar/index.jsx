@@ -3,7 +3,8 @@ import React from 'react'
 // CSS
 import styles from './index.module.css'
 
-
+// LOGO
+import logo from "../../assets/Logo.png"
 // IMPORTS BOOTSTRAP {
 
 // NAVBAR BOOTSTRAP IMPORTS
@@ -22,9 +23,17 @@ const index = () => {
      expand="lg" 
      className={`${styles.MainNavBar} bg-body-tertiary`}
      
-     data-bs-theme="dark">
+     data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="/">Central de Compras</Navbar.Brand>
+        <Navbar.Brand href="/">Doce mel
+        <img src={logo}
+          height={40}/>
+          
+          </Navbar.Brand>
+        <Navbar.Brand >
+          
+          
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

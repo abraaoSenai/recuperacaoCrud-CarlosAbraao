@@ -135,15 +135,14 @@ const Login = () => {
           </Alert>
 
           <Button 
-          variant="primary" 
+          variant="secondary" 
           type="submit"
           className={styles.btnCadastrar}>
             Enviar
           </Button>
         </form>
 
-          <p>Dica de email: adm@gmail.com</p>
-          <p>Dica de senha: 12345</p>
+
       </Container>
     </div>
   );

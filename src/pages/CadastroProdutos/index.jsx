@@ -35,7 +35,7 @@ import { Container } from 'react-bootstrap';
 
 const CadastroProdutos = () => {
   const [nomeProduto, setNomeProduto] = useState("")
-  const [categoriaProduto, setCategoriaProduto] = useState("")
+  const [tipoProduto, setTipoProduto] = useState("")
   const [precoProduto, setPrecoProduto] = useState("")
 
   // URL
@@ -51,21 +51,21 @@ const CadastroProdutos = () => {
     
     if(!nomeProduto == "" ){
 
-      if(!categoriaProduto == ""){
+      if(!tipoProduto == ""){
         if(!precoProduto == ""){
           
 
-          const produto = {nomeProduto, categoriaProduto, precoProduto}
+          const produto = {nomeProduto, tipoProduto, precoProduto}
           const res = await fetch(url, {
               method: "POST",
               headers: {"Content-Type": "application/json"},
               body: JSON.stringify(produto)
 
           })
-          alert("Usuário cadastrado com sucesso")
+          alert("Produto cadastrado com sucesso")
           
           setNomeProduto("")
-          setCategoriaProduto("")
+          setTipoProduto("")
           setPrecoProduto("")
         }
         else{
@@ -139,21 +139,21 @@ const CadastroProdutos = () => {
           </FloatingLabel>
 
             
-{/* Categoria do produto */}
+{/* Tipo do produto */}
           <FloatingLabel
-            controlId="categoriaProdutoInput"
-            label="Categoria do produto"
+            controlId="tipoProdutoInput"
+            label="Tipo do produto"
             className="mb-3"
           >
             <Form.Control 
             type="text"
             placeholder="name@example.com" 
-            value={categoriaProduto}
+            value={tipoProduto}
               onChange={(e)=>{
-                  setCategoriaProduto(e.target.value)
+                  setTipoProduto(e.target.value)
 
 
-                  console.log(categoriaProduto)
+                  console.log(tipoProduto)
               }} 
             />
           </FloatingLabel>
@@ -180,7 +180,7 @@ const CadastroProdutos = () => {
 {/* BOTÂO CADASTRAR */}
 
           <Button 
-          variant="primary"
+          variant="secondary"
           type="submit"
           className={styles.cadastrarBtn}
           

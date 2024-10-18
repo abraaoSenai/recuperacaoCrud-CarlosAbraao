@@ -45,8 +45,8 @@ const ListaDeProdutos = () => {
             <tr>
               <th>ID</th>
               <th>Nome </th>
-              <th>Categoria</th>
               <th>Preço</th>
+              <th>Tipo</th>
               <th></th>
             </tr>
           </thead>
@@ -55,11 +55,11 @@ const ListaDeProdutos = () => {
               <tr key={produto.id}>
                 <td>{produto.id}</td>
                 <td>{produto.nomeProduto}</td>
-                <td>{produto.categoriaProduto}</td>
-                <td>{produto.precoProduto} R$ </td>
+                <td>{produto.precoProduto} R$</td>
+                <td>{produto.tipoProduto}  </td>
                 <td>
                   <ButtonGroup size="sm">
-                    <Button variant="info">Editar</Button>
+                    <Button variant="secondary">Editar</Button>
                     <Button
                       variant="danger"
                       onClick={async () => {

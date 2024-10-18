@@ -2,29 +2,29 @@
   "produtos": [
     {
       "id": "f2e2",
-      "nomeProduto": "1610",
-      "categoriaProduto": "1610",
-      "precoProduto": "1610"
+      "nomeProduto": "Bolinho de chuva",
+      "precoProduto": "15.99",
+      "tipoProduto": "Doce pequeno"
     },
     {
-      "id": "40db",
-      "nomeProduto": "Banana",
-      "categoriaProduto": "452",
-      "precoProduto": "2"
+      "id": "2ca2",
+      "nomeProduto": "Rosquinha doce",
+      "tipoProduto": "Paris Saint Germain",
+      "precoProduto": "20.99"
     },
     {
-      "id": "ebf4",
-      "nomeProduto": "Banana",
-      "categoriaProduto": "Orgânico",
-      "precoProduto": "2"
+      "id": "b07f",
+      "nomeProduto": "Rosquinha Salgada",
+      "tipoProduto": "Ruim",
+      "precoProduto": "0.99"
     }
   ],
   "usuarios": [
     {
       "id": "1",
-      "nome": "adm",
-      "email": "adm@gmail.com",
-      "senha": "12345",
+      "nome": "Doce mel",
+      "email": "docemel@sodoce.com.br",
+      "senha": "brigadeiro123",
       "tipo": "Administrador"
     }
   ]
