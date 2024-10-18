@@ -39,7 +39,7 @@ const CadastroProdutos = () => {
   const [precoProduto, setPrecoProduto] = useState("")
 
   // URL
-  const [url] = useState("http://localhost:3000/produtos")
+  const [url] = useState("http://localhost:4000/produtos")
   
   // ALERTA
   const [alertaClass, setAlertaClass] = useState('mb-3 d-none')

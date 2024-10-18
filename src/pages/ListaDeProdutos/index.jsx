@@ -10,7 +10,7 @@ import MainNavBar from "../../components/MainNavBar/index.jsx"
 import { useState, useEffect } from "react";
 
 
-const url = "http://localhost:3000/produtos";
+const url = "http://localhost:4000/produtos";
 
 const ListaDeProdutos = () => {
   const [produtos, setProdutos] = useState([]);
